@@ -5,13 +5,13 @@ import itemData from '../data/items'
 const App = () => {
   const [mode, setMode] = useState(false)
   const appClass = mode ? 'App dark' : 'App light'
-  const handleClick = () => setMode(mode => !mode)
+  const handleTheme = () => setMode(mode => !mode)
 
 	return (
 		<div className={appClass}>
 			<header>
 				<h2>Shopster</h2>
-				<button id='toggleMode' onClick={handleClick} className={appClass}>{mode ? 'Dark Mode' : 'Light Mode'}</button>
+				<button id='toggleMode' onClick={handleTheme} className={appClass}>{mode ? 'Dark Mode' : 'Light Mode'}</button>
 			</header>
 			<ShoppingList items={itemData} />
 		</div>
