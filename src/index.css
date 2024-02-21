@@ -54,6 +54,12 @@ span[role="image"] {
   border-radius: 10px;
 }
 
+#toggleMode {
+  margin-right: 0;
+  background: var(--yellow);
+  color: #333;
+}
+
 header {
   display: flex;
   justify-content: space-between;
