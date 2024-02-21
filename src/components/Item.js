@@ -1,13 +1,10 @@
-import React from "react";
+const Item = ({ name, category }) => {
+	return (
+		<li className=''>
+			<span>{name}</span>
+			<span className='category'>{category}</span>
+			<button className='add'>Add to Cart</button>
+		</li>
+)}
 
-function Item({ name, category }) {
-  return (
-    <li className="">
-      <span>{name}</span>
-      <span className="category">{category}</span>
-      <button className="add">Add to Cart</button>
-    </li>
-  );
-}
-
-export default Item;
+export default Item
