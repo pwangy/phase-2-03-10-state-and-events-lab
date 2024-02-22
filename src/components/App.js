@@ -3,9 +3,9 @@ import ShoppingList from './ShoppingList'
 import itemData from '../data/items'
 
 const App = () => {
-  const [mode, setMode] = useState(false)
-  const appClass = mode ? 'App dark' : 'App light'
-  const handleTheme = () => setMode(mode => !mode)
+	const [mode, setMode] = useState(false)
+	const appClass = mode ? 'App dark' : 'App light'
+	const handleTheme = () => setMode(mode => !mode)
 
 	return (
 		<div className={appClass}>
