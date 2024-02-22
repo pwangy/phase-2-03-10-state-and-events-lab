@@ -5,7 +5,6 @@ function ShoppingList({ items }) {
 	const [selectedCategory, setSelectedCategory] = useState('All')
 
 	const handleFilter = (e) => {
-		console.log(e.target.value)
 		setSelectedCategory(e.target.value)
 	}
 
